@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BS-LAYOUT</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--containers-->
+    <p class="h3 text-center">containers Example</p>
+    <div class="container bg-success">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, dicta.
+      </p>
+    </div>
+
+    <!--container fluid-->
+    <hr />
+    <p class="h3 text-center">container fluid Example</p>
+
+    <div class="container-fluid bg-info">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, dicta.
+      </p>
+    </div>
+
+    <!--responsive containers-->
+    <hr />
+    <p class="h3 text-center">responsive containers Example</p>
+    <div class="container-sm bg-success">
+      <p>container small</p>
+    </div>
+
+    <div class="container-md bg-info">
+      <p>container medium</p>
+    </div>
+
+    <div class="container-lg bg-success">
+      <p>container large</p>
+    </div>
+
+    <div class="container-xl bg-info">
+      <p>container large</p>
+    </div>
+
+    <div class="container-xxl bg-success">
+      <p>container large</p>
+    </div>
+
+    <!--customization-->
+    <hr />
+    <p class="h3 text-center">customization Example</p>
+    <div class="container bg-success">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, dicta.
+      </p>
+    </div>
+
+    <!--layout-->
+    <hr />
+    <p class="h3 text-center">layout Example</p>
+
+    <!-- .container>.row>(.col{column $})*12 -->
+    <div class="container">
+      <div class="row">
+        <div class="col">column 1</div>
+        <div class="col">column 2</div>
+        <div class="col">column 3</div>
+        <div class="col">column 4</div>
+        <div class="col">column 5</div>
+        <div class="col">column 6</div>
+        <div class="col">column 7</div>
+        <div class="col">column 8</div>
+        <div class="col">column 9</div>
+        <div class="col">column 10</div>
+        <div class="col">column 11</div>
+        <div class="col">column 12</div>
+      </div>
+
+      <!--column sizing-->
+      <hr />
+      <p class="h3 text-center">column sizing Example</p>
+
+      <!-- .row>(.col{column $})*3 -->
+      <div class="row">
+        <div class="p-3 col-5">column 1</div>
+        <div class="p-3 col-4">column 2</div>
+        <div class="p-3 col">column 3</div>
+      </div>
+
+      <!--col-auto-->
+      <hr />
+      <p class="h3 text-center">col-auto Example</p>
+      <div class="row">
+        <div class="p-3 col">column 1</div>
+        <div class="p-3 col-auto">
+          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+        </div>
+        <div class="p-3 col">column 3</div>
+      </div>
+
+      <!--responsive containers-->
+      <hr />
+      <p class="h3 text-center">responsive containers Example</p>
+      <div class="row">
+        <div class="p-3 col-sm">column 1</div>
+        <div class="p-3 col-sm">
+          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+        </div>
+        <div class="p-3 col-sm">column 3</div>
+      </div>
+
+      <!--mix n match 01-->
+      <hr />
+      <p class="h3 text-center">mix n match 01 Example</p>
+      <div class="row">
+        <div class="p-3 col-md-4">column 1</div>
+        <div class="p-3 col-md-8">
+          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+        </div>
+      </div>
+
+      <!--mix n match 02-->
+      <hr />
+      <p class="h3 text-center">mix n match 02 Example</p>
+      <div class="row">
+        <div class="p-3 col-6 col-md-4">column 1</div>
+        <div class="p-3 col-6 col-md-4">
+          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+        </div>
+        <div class="p-3 col-6 col-md-4">
+          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+        </div>
+      </div>
+
+      <!--row-cols-->
+      <hr />
+      <p class="h3 text-center">row-cols Example</p>
+      <!-- .row>(.col>lorem3)*4 -->
+      <div class="row row-cols-2">
+        <div class="col">Lorem, ipsum dolor.</div>
+        <div class="col">Sint, eveniet explicabo?</div>
+        <div class="col-8">Commodi, consequuntur similique.</div>
+        <div class="col">Maxime, quam quas.</div>
+      </div>
+
+      <!--row-cols responsive-->
+      <hr />
+      <p class="h3 text-center">row-cols responsive Example</p>
+
+      <div class="row row-cols-2 row-cols-md-3">
+        <div class="col">Lorem, ipsum dolor.</div>
+        <div class="col">Sint, eveniet explicabo?</div>
+        <div class="col">Commodi, consequuntur similique.</div>
+        <div class="col">Maxime, quam quas.</div>
+      </div>
+
+      <!--row-cols-auto-->
+      <hr />
+      <p class="h3 text-center">row-cols-auto Example</p>
+
+      <div class="row row-cols-2 row-cols-md-auto">
+        <div class="col">Lorem, ipsum dolor.</div>
+        <div class="col">Sint, eveniet explicabo?</div>
+        <div class="col">Commodi, consequuntur similique.</div>
+        <div class="col">Maxime, quam quas.</div>
+      </div>
+
+      <!--nesting-->
+      <hr />
+      <p class="h3 text-center">nesting Example</p>
+
+      <!-- .row>(.col-sm-3>lorem2)*2 -->
+      <div class="row">
+        <div class="col-sm-3">Lorem, ipsum.</div>
+        <div class="col-sm-9">
+          <!-- .row>(.col-8.col-lg-6>lorem2)*2 -->
+          <div class="row">
+            <div class="col-8 col-lg-6">nested 1</div>
+            <div class="col-4 col-lg-6">nested 2</div>
+          </div>
+        </div>
+      </div>
+
+      <!--horizotal alignment-->
+      <hr />
+      <p class="h3 text-center">horizotal alignment Example</p>
+      <!-- .row>(.col-2{one of the three columns})*3 -->
+
+      <!-- end -->
+      <div class="row justify-content-end mb-3">
+        <div class="col-2">one of the three columns</div>
+        <div class="col-2">one of the three columns</div>
+        <div class="col-2">one of the three columns</div>
+      </div>
+
+      <!-- center -->
+      <div class="row justify-content-center mb-3">
+        <div class="col-2">one of the three columns</div>
+        <div class="col-2">one of the three columns</div>
+        <div class="col-2">one of the three columns</div>
+      </div>
+
+      <!-- start -->
+      <div class="row justify-content-start mb-3">
+        <div class="col-2">one of the three columns</div>
+        <div class="col-2">one of the three columns</div>
+        <div class="col-2">one of the three columns</div>
+      </div>
+
+      <!--distribution of remaining space-->
+      <hr />
+      <p class="h3 text-center">distribution of remaining space Example</p>
+
+      <p class="h3 text-center">between</p>
+      <div class="row justify-content-between mb-3">
+        <div class="col-2">one of the three columns</div>
+        <div class="col-2">one of the three columns</div>
+        <div class="col-2">one of the three columns</div>
+      </div>
+
+      <p class="h3 text-center">evenly</p>
+      <div class="row justify-content-evenly mb-3">
+        <div class="col-2">one of the three columns</div>
+        <div class="col-2">one of the three columns</div>
+        <div class="col-2">one of the three columns</div>
+      </div>
+
+      <p class="h3 text-center">around</p>
+      <div class="row justify-content-around mb-3">
+        <div class="col-2">one of the three columns</div>
+        <div class="col-2">one of the three columns</div>
+        <div class="col-2">one of the three columns</div>
+      </div>
+
+      <!--vertical alignment-->
+      <hr />
+      <p class="h3 text-center">vertical alignment Example</p>
+
+      <p class="h3 text-center">end</p>
+      <div class="row mb-3 vertExmpl1 align-items-end">
+        <div class="col-2">column 1</div>
+        <div class="col-2">column 2</div>
+        <div class="col-2">column 3</div>
+      </div>
+
+      <p class="h3 text-center">center</p>
+      <div class="row mb-3 vertExmpl1 align-items-center">
+        <div class="col-2">column 1</div>
+        <div class="col-2">column 2</div>
+        <div class="col-2">column 3</div>
+      </div>
+
+      <p class="h3 text-center">start</p>
+      <div class="row mb-3 vertExmpl1 align-items-start">
+        <div class="col-2">column 1</div>
+        <div class="col-2">column 2</div>
+        <div class="col-2">column 3</div>
+      </div>
+
+      <p class="h3 text-center">align self</p>
+      <div class="row mb-3 vertExmpl1 align-items-center">
+        <div class="col-2 align-self-start">column 1</div>
+        <div class="col-2">column 2</div>
+        <div class="col-2 align-self-end">column 3</div>
+      </div>
+
+      <!--column wrapping-->
+      <hr />
+      <p class="h3 text-center">column wrapping Example</p>
+
+      <!-- .row.mb-3>(.col-4>{column-$})*3 -->
+      <div class="row mb-3">
+        <div class="col-4">column-1</div>
+        <div class="col-6">column-2</div>
+        <div class="col-9">column-3</div>
+      </div>
+
+      <!--column break-->
+      <hr />
+      <p class="h3 text-center">column break Example</p>
+      <div class="row mb-3">
+        <div class="col">column-1</div>
+        <div class="w-100"></div>
+        <div class="col">column-2</div>
+        <div class="col">column-3</div>
+      </div>
+
+      <!--reodering-->
+      <hr />
+      <p class="h3 text-center">reodering Example</p>
+
+      <div class="row mb-3">
+        <div class="col order-3">column-1</div>
+        <div class="col order-2">column-2</div>
+        <div class="col order-1">column-3</div>
+      </div>
+
+      <!--responsive reodering-->
+      <hr />
+      <p class="h3 text-center">responsive reodering Example</p>
+
+      <div class="row mb-3">
+        <div class="col order-md-3">column-1</div>
+        <div class="col order-md-2">column-2</div>
+        <div class="col order-md-1">column-3</div>
+      </div>
+
+      <!--offset columns-->
+      <hr />
+      <p class="h3 text-center">offset columns Example</p>
+
+      <div class="row mb-3">
+        <div class="col mb-3 offset-1">column-1</div>
+        <div class="col mb-3 offset-5">column-2</div>
+        <div class="col mb-3 offset-4">column-3</div>
+      </div>
+
+      <!--responsive offset columns-->
+      <hr />
+      <p class="h3 text-center">responsive offset columns Example</p>
+
+      <div class="row mb-3">
+        <div class="col mb-3 offset-md-1">column-1</div>
+        <div class="col mb-3 offset-md-5">column-2</div>
+        <div class="col mb-3 offset-md-4">column-3</div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <footer>
+      <p style="margin-top: 30rem; text-align: center">&copy; codeStraight</p>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
