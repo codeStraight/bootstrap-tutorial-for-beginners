@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BS-Range-Input</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--containers-->
+    <div class="container">
+      <!--Range-Input-->
+      <p class="h3 text-center">Range-Input Example</p>
+
+      <!-- form>label.null{Range Example}+input.null{Range Input}[type=range] -->
+      <form action="">
+        <label for="" class="null">Range Example</label>
+        <input type="range" class="null">Range Input</input>
+
+        <!--bootstrap styled range input-->
+        <hr><p class="h3 text-center">bootstrap styled range input Example</p>
+        <label for="" class="form-label">Range Example</label>
+        <input type="range" class="form-range">Range Input</input>
+
+        <!--bootstrap styled range input disabled-->
+        <hr><p class="h3 text-center">bootstrap styled range input disabled Example</p>
+        <label for="" class="form-label">Range Example</label>
+        <input disabled type="range" class="form-range">Range Input</input>
+
+        <!--min & max values -->
+        <hr><p class="h3 text-center">min & max values Example</p>
+        <label for="" class="form-label">Range Example</label>
+        <input type="range" class="form-range" min="0" max="100">Range Input</input>
+
+        <!--step value -->
+        <hr><p class="h3 text-center">step value Example</p>
+        <label for="" class="form-label">Range Example</label>
+        <input type="range" class="form-range" min="0" max="5" step="0.5">Range Input</input>
+      </form>
+    </div>
+    <!-- container end -->
+    <footer>
+      <p style="margin-top: 20rem; text-align: center">&copy; codeStraight</p>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
