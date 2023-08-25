@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BS-Input-Group</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--containers-->
+    <div class="container">
+      <!--Input-Group-->
+      <p class="h3 text-center">Input-Group Example</p>
+      <!-- .input-group.mb-3>span.input-group-text{@}+input.form-control[placeholder=Username] -->
+      <div class="input-group mb-3">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Username" />
+      </div>
+
+      <!--addon to the other side-->
+      <hr />
+      <p class="h3 text-center">addon to the other side Example</p>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Username" />
+        <span class="input-group-text">@</span>
+      </div>
+
+      <!--input group with label n text-->
+      <hr />
+      <p class="h3 text-center">input group with label n text Example</p>
+      <div class="mb-3">
+        <label for="" class="form-label">Your label here</label>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Username" />
+          <span class="input-group-text">@</span>
+        </div>
+        <div class="form-text">your text here</div>
+      </div>
+      <!--addon to both the sides-->
+      <hr />
+      <p class="h3 text-center">addon to both the sides Example</p>
+      <div class="mb-3">
+        <div class="input-group mb-3">
+          <span class="input-group-text">@</span>
+          <input type="text" class="form-control" placeholder="Username" />
+          <span class="input-group-text">@</span>
+        </div>
+      </div>
+
+      <!--input-group with textarea-->
+      <hr />
+      <p class="h3 text-center">input-group with text Example</p>
+      <div class="mb-3">
+        <div class="input-group mb-3">
+          <span class="input-group-text">@</span>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="3"
+            class="form-control"
+          ></textarea>
+        </div>
+      </div>
+
+      <!--sizig-->
+      <hr />
+      <p class="h3 text-center">sizig Example</p>
+
+      <!-- small -->
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Username" />
+      </div>
+
+      <!-- large -->
+      <div class="input-group input-group-lg mb-3">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Username" />
+      </div>
+
+      <!--checkboxes & radios as addons-->
+      <hr />
+      <p class="h3 text-center">checkboxes & radios as addons Example</p>
+
+      <!-- .input-group.mb-3>(.input-group-text>input.form-check-input.mt-0[type=checkbox])+input.form-control -->
+      <div class="input-group mb-3">
+        <div class="input-group-text">
+          <input type="checkbox" class="form-check-input mt-0" />
+        </div>
+        <input type="text" class="form-control" />
+      </div>
+
+      <!--radio as an addon-->
+      <hr />
+      <p class="h3 text-center">radio as an addon Example</p>
+      <div class="input-group mb-3">
+        <div class="input-group-text">
+          <input type="radio" class="form-check-input mt-0" />
+        </div>
+        <input type="text" class="form-control" />
+      </div>
+
+      <!--button as an addon-->
+      <hr />
+      <p class="h3 text-center">button as an addon Example</p>
+
+      <!-- .input-group.mb-3>button.btn.btn-outline-secondary{Button}+input.form-control[placeholder="Last Name"] -->
+      <div class="input-group mb-3">
+        <button class="btn btn-outline-secondary">Button</button>
+        <input type="text" class="form-control" placeholder="Last Name" />
+      </div>
+
+      <!--Button with Dropdown-->
+      <hr />
+      <p class="h3 text-center">Button with Dropdown Example</p>
+
+      <!-- .input-group.mb-3>button.btn.btn-outline-secondary.dropdown-toggle[data-bs-toggle=dropdown]{Button}(ul.dropdown-menu>(li>a.dropdown-item{item: $})*3)+input.form-control -->
+      <div class="input-group mb-3">
+        <button
+          class="btn btn-outline-secondary dropdown-toggle"
+          data-bs-toggle="dropdown"
+        >
+          Button
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="" class="dropdown-item">item: 1</a>
+          </li>
+          <li>
+            <a href="" class="dropdown-item">item: 2</a>
+          </li>
+          <li>
+            <a href="" class="dropdown-item">item: 3</a>
+          </li>
+        </ul>
+        <input type="text" class="form-control" />
+      </div>
+
+      <!--segmented buttons-->
+      <hr />
+      <p class="h3 text-center">segmented buttons Example</p>
+      <div class="input-group mb-3">
+        <button class="btn btn-outline-secondary">Action</button>
+        <button
+          class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+          data-bs-toggle="dropdown"
+        ></button>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="" class="dropdown-item">item: 1</a>
+          </li>
+          <li>
+            <a href="" class="dropdown-item">item: 2</a>
+          </li>
+          <li>
+            <a href="" class="dropdown-item">item: 3</a>
+          </li>
+        </ul>
+        <input type="text" class="form-control" />
+      </div>
+
+      <!--custom select-->
+      <hr />
+      <p class="h3 text-center">custom select Example</p>
+
+      <!-- .input-group.mb-3>lable.input-group-text{Options}+select.form-select>(option{option: $}[value=$])*3 -->
+      <div class="input-group mb-3">
+        <lable class="input-group-text">Options</lable>
+        <select name="" id="" class="form-select">
+          <option value="1">option: 1</option>
+          <option value="2">option: 2</option>
+          <option value="3">option: 3</option>
+        </select>
+      </div>
+
+      <!--custom file input-->
+      <hr />
+      <p class="h3 text-center">custom file input Example</p>
+      <!-- .input-group.mb-3>label.input-group-text{Upload}+input.form-control[type=file] -->
+      <div class="input-group mb-3">
+        <label for="" class="input-group-text">Upload</label>
+        <input type="file" class="form-control" />
+      </div>
+    </div>
+    <!-- container end -->
+
+    <footer>
+      <p style="margin-top: 20rem; text-align: center">&copy; codeStraight</p>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
