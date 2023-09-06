@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BS-Floatig-Labels</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--containers-->
+    <div class="container">
+      <!--Floatig-Labels-->
+      <p class="h3 text-center">Floatig-Labels Example</p>
+
+      <!-- .form-floating.mb-3>input.form-control[id=floatigInput type=email placeholder=name@example.com]+label[for=floatigInput]{email address} -->
+      <div class="form-floating mb-3">
+        <input
+          type="email"
+          class="form-control"
+          id="floatigInput"
+          placeholder="name@example.com"
+        />
+        <label for="floatigInput">email address</label>
+      </div>
+
+      <!--floating-label with value-->
+      <hr />
+      <p class="h3 text-center">floating-label with value Example</p>
+      <div class="form-floating mb-3">
+        <input
+          type="email"
+          class="form-control"
+          id="floatigInput"
+          placeholder="name@example.com"
+          value="my@example.com"
+        />
+        <label for="floatigInput">email address</label>
+      </div>
+
+      <!--floating-labels with textarea-->
+      <hr />
+      <p class="h3 text-center">floating-labels with textarea Example</p>
+      <div class="form-floating mb-3">
+        <!-- textarea.form-control[placeholder="please leave me a coment here" id=floatingInput] -->
+        <textarea
+          name=""
+          id="floatingInput"
+          cols="30"
+          rows="10"
+          class="form-control"
+          placeholder="please leave me a coment here"
+        ></textarea>
+        <label for="floatigInput">email address</label>
+      </div>
+
+      <!--floating-labels with form-select-->
+      <hr />
+      <p class="h3 text-center">floating-labels with form-select Example</p>
+      <div class="form-floating mb-3">
+        <!-- select.form-select[id=floatingInput]>(option[value=option: $]{option: $})*3 -->
+        <select name="" id="floatingInput" class="form-select">
+          <option value="option:" 1="">option: 1</option>
+          <option value="option:" 2="">option: 2</option>
+          <option value="option:" 3="">option: 3</option>
+        </select>
+        <label for="floatigInput">email address</label>
+      </div>
+
+      <!--floating-labels with input group-->
+      <hr />
+      <p class="h3 text-center">floating-labels with input group Example</p>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text">@</span>
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control"
+            id="floatigInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatigInput">email address</label>
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+    <footer>
+      <p style="margin-top: 20rem; text-align: center">&copy; codeStraight</p>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
