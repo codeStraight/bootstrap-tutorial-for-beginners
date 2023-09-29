@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BS-form-validation</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--containers-->
+    <div class="container">
+      <!--form-validation-->
+      <p class="h3 text-center">FORM-VALIDATION Example</p>
+      <!-- form.row>(.col-sm-6{column: $})*3 -->
+      <form action="" class="row">
+        <div class="col-sm-6">
+          <!-- label.form-label{First Name}input.form-control[required] -->
+          <label for="" class="form-label">First Name</label>
+          <input type="text" class="form-control" required="required" />
+        </div>
+        <div class="col-sm-6">
+          <!-- label.form-label{First Name}input.form-control[required] -->
+          <label for="" class="form-label">Last Name</label>
+          <input type="text" class="form-control" required="required" />
+        </div>
+        <div class="col-sm-6">
+          <!-- .form-check>input.form-check-input[type=checkbox required]label.form-check-lable{Agree to terms & conditions} -->
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              required="required"
+            />
+            <label for="" class="form-check-lable"
+              >Agree to terms & conditions</label
+            >
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <button class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+
+      <!--bootstrap form validation-->
+      <hr />
+      <p class="h3 text-center">bootstrap form validation Example</p>
+      <form action="" class="row needs-validation g-3" novalidate>
+        <div class="col-sm-6">
+          <!-- label.form-label{First Name}input.form-control[required] -->
+          <label for="" class="form-label">First Name</label>
+          <input type="text" class="form-control" required="required" />
+          <div class="valid-feedback">Looks Good</div>
+        </div>
+        <div class="col-sm-6">
+          <!-- label.form-label{First Name}input.form-control[required] -->
+          <label for="" class="form-label">Last Name</label>
+          <input type="text" class="form-control" required="required" />
+          <div class="valid-feedback">Looks Good</div>
+        </div>
+        <div class="col-sm-6">
+          <!-- .form-check>input.form-check-input[type=checkbox required]label.form-check-lable{Agree to terms & conditions} -->
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              required="required"
+            />
+            <label for="" class="form-check-lable"
+              >Agree to terms & conditions</label
+            >
+            <div class="invalid-feedback">
+              you must aggree before submitting
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <button class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+
+      <!--Feedback Tooltip-->
+      <hr />
+      <p class="h3 text-center">Feedback Tooltip Example</p>
+      <form action="" class="row needs-validation g-3" novalidate>
+        <div class="col-sm-6 position-relative">
+          <!-- label.form-label{First Name}input.form-control[required] -->
+          <label for="" class="form-label">First Name</label>
+          <input type="text" class="form-control" required="required" />
+          <div class="valid-tooltip">Looks Good</div>
+        </div>
+        <div class="col-sm-6 position-relative">
+          <!-- label.form-label{First Name}input.form-control[required] -->
+          <label for="" class="form-label">Last Name</label>
+          <input type="text" class="form-control" required="required" />
+          <div class="valid-tooltip">Looks Good</div>
+        </div>
+        <div class="col-sm-6 position-relative">
+          <!-- .form-check>input.form-check-input[type=checkbox required]label.form-check-lable{Agree to terms & conditions} -->
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              required="required"
+            />
+            <label for="" class="form-check-lable"
+              >Agree to terms & conditions</label
+            >
+            <div class="invalid-tooltip">you must aggree before submitting</div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <button class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!-- container end -->
+
+    <footer>
+      <p style="margin-top: 10rem; text-align: center">&copy; codeStraight</p>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
