@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BS-Form-Layout</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--containers-->
+    <div class="container">
+      <!--Form-Layout-->
+      <p class="h3 text-center">Form-Layout Example</p>
+      <!-- .mb-3>label.fomr-label{Example Label}input.form-control[placeholder="example text"] -->
+      <div class="mb-3">
+        <label for="" class="fomr-label">Example Label 1</label>
+        <input type="text" class="form-control" placeholder="example text" />
+      </div>
+      <div class="mb-3">
+        <label for="" class="fomr-label">Example Label 2</label>
+        <input type="text" class="form-control" placeholder="example text" />
+      </div>
+
+      <!--form-layout with grid system-->
+      <hr />
+      <p class="h3 text-center">form-layout with grid system Example</p>
+      <!-- .row>.col>input.form-control[placeholder="First Name"] -->
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First Name" />
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last Name" />
+        </div>
+      </div>
+
+      <!--form-gutters-->
+      <hr />
+      <p class="h3 text-center">form-gutters Example</p>
+
+      <div class="row g-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First Name" />
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last Name" />
+        </div>
+      </div>
+
+      <!--form-layout with grid-system-->
+      <hr />
+      <p class="h3 text-center">form-layout with grid-system Example</p>
+
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <label for="" class="form-label">Email</label>
+          <input type="email" class="form-control" />
+        </div>
+        <div class="col-sm-6">
+          <label for="" class="form-label">Password</label>
+          <input type="password" class="form-control" />
+        </div>
+        <div class="col-12">
+          <label for="" class="form-label">Address 1</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="col-12">
+          <label for="" class="form-label">Address 2</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="col-6">
+          <label for="" class="form-label">City</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="col-4">
+          <label for="" class="form-label">State</label>
+          <!-- select.form-select>(option[value=$]{option: $})*3 -->
+          <select name="" id="" class="form-select">
+            <option value="1">option: 1</option>
+            <option value="2">option: 2</option>
+            <option value="3">option: 3</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <label for="" class="form-label">Zip</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="col-12">
+          <input type="checkbox" class="form-check-input" checked />
+          <label for="" class="form-label">Check me out</label>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary">Sign In</button>
+        </div>
+      </div>
+
+      <!--Horizontal Form-->
+      <hr />
+      <p class="h3 text-center">Horizontal Form Example</p>
+
+      <!-- form>.row.mb-3>label.col-sm-2.col-form-label{Email}+.col-sm-10>input.form-control[type=email] -->
+      <form action="">
+        <div class="row mb-3">
+          <label for="" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" />
+          </div>
+        </div>
+
+        <!-- fieldset.row.mb-3>legend.col-sm-2.col-form-label.pt-0{Radios}+.col-sm-10 -->
+        <fieldset class="row mb-3">
+          <legend class="col-sm-2 col-form-label pt-0">Radios</legend>
+          <div class="col-sm-10">
+            <!-- (.form-check>input.form-check-input[type=radio]label.form-check-label{Radio: $})*3 -->
+            <div class="form-check">
+              <input type="radio" class="form-check-input" checked />
+              <label for="" class="form-check-label">Radio: 1</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" />
+              <label for="" class="form-check-label">Radio: 2</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" disabled checked />
+              <label for="" class="form-check-label">Radio: 3</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- .row.mb-3>.col-sm.10.offset-sm-2>.form-check>input.form-check-input[type=checkbox]lable.form-check-lable{Example Checkbox} -->
+        <div class="row mb-3">
+          <div class="col-sm 10 offset-sm-2">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" checked />
+              <lable class="form-check-lable">Example Checkbox</lable>
+            </div>
+          </div>
+        </div>
+
+        <!--form-label-sizing-->
+        <hr />
+        <p class="h3 text-center">form-label-sizing Example</p>
+        <!-- small -->
+        <div class="row mb-3">
+          <label for="" class="col-sm-2 col-form-label col-form-label-sm"
+            >Email</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="email"
+              class="form-control form-control-sm"
+              placeholder="small"
+            />
+          </div>
+        </div>
+
+        <!-- large -->
+        <div class="row mb-3">
+          <label for="" class="col-sm-2 col-form-label col-form-label-lg"
+            >Email</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="email"
+              class="form-control form-control-lg"
+              placeholder="large"
+            />
+          </div>
+        </div>
+
+        <!--Column Sizing-->
+        <hr />
+        <p class="h3 text-center">Column Sizing Example</p>
+
+        <!-- .row>(.col-sm>input.form-control[placeholder="column: $"])*3 -->
+        <div class="row">
+          <div class="col-sm-7">
+            <input type="text" class="form-control" placeholder="column: 1" />
+          </div>
+          <div class="col-sm">
+            <input type="text" class="form-control" placeholder="column: 2" />
+          </div>
+          <div class="col-sm">
+            <input type="text" class="form-control" placeholder="column: 3" />
+          </div>
+        </div>
+      </form>
+
+      <!--Auto Sizing-->
+      <hr />
+      <p class="h3 text-center">Auto Sizing Example</p>
+      <!-- form.row.align-items-center>(.col-auto{column: $})*5 -->
+      <form action="" class="row align-items-center g-3">
+        <div class="col-auto">
+          <!-- label.visually-hidden{Name}input.form-control[placeholder="foo bar"] -->
+          <label for="" class="visually-hidden">Name</label>
+          <input type="text" class="form-control" placeholder="foo bar" />
+        </div>
+        <div class="col-auto">
+          <label for="" class="visually-hidden">UserName</label>
+          <div class="input-group">
+            <div class="input-group-text">@</div>
+            <input type="text" class="form-control" placeholder="Username" />
+          </div>
+        </div>
+        <div class="col-auto">
+          <!-- select.form-select>(option[value=$]{opt:$})*3 -->
+          <select name="" id="" class="form-select">
+            <option value="1">opt:1</option>
+            <option value="2">opt:2</option>
+            <option value="3">opt:3</option>
+          </select>
+        </div>
+        <div class="col-auto">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" checked />
+            <lable class="form-check-label">Remember Me</lable>
+          </div>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+
+      <!--col-auto with specific sizing-->
+      <hr />
+      <p class="h3 text-center">col-auto with specific sizing Example</p>
+      <form action="" class="row align-items-center g-3">
+        <div class="col-7">
+          <!-- label.visually-hidden{Name}input.form-control[placeholder="foo bar"] -->
+          <label for="" class="visually-hidden">Name</label>
+          <input type="text" class="form-control" placeholder="foo bar" />
+        </div>
+        <div class="col-4">
+          <label for="" class="visually-hidden">UserName</label>
+          <div class="input-group">
+            <div class="input-group-text">@</div>
+            <input type="text" class="form-control" placeholder="Username" />
+          </div>
+        </div>
+        <div class="col-auto">
+          <!-- select.form-select>(option[value=$]{opt:$})*3 -->
+          <select name="" id="" class="form-select">
+            <option value="1">opt:1</option>
+            <option value="2">opt:2</option>
+            <option value="3">opt:3</option>
+          </select>
+        </div>
+        <div class="col-auto">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" checked />
+            <lable class="form-check-label">Remember Me</lable>
+          </div>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+
+      <!--row-cols-auto / inline form-->
+      <hr />
+      <p class="h3 text-center">row-cols-auto / inline form Example</p>
+      <form action="" class="row align-items-center g-3 row-cols-sm-auto">
+        <div class="col-12">
+          <!-- label.visually-hidden{Name}input.form-control[placeholder="foo bar"] -->
+          <label for="" class="visually-hidden">Name</label>
+          <input type="text" class="form-control" placeholder="foo bar" />
+        </div>
+        <div class="col-12">
+          <label for="" class="visually-hidden">UserName</label>
+          <div class="input-group">
+            <div class="input-group-text">@</div>
+            <input type="text" class="form-control" placeholder="Username" />
+          </div>
+        </div>
+        <div class="col-12">
+          <!-- select.form-select>(option[value=$]{opt:$})*3 -->
+          <select name="" id="" class="form-select">
+            <option value="1">opt:1</option>
+            <option value="2">opt:2</option>
+            <option value="3">opt:3</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" checked />
+            <lable class="form-check-label">Remember Me</lable>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!-- container end -->
+
+    <footer>
+      <p style="margin-top: 20rem; text-align: center">&copy; codeStraight</p>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
